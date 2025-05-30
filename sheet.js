@@ -26,14 +26,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
         let interval = setInterval(function(){
             showImages();
-        }, 2000);
-        setTimeout(function(){
+        }, 1000);
+        setTimeout(() => {
             clearInterval(interval);
-            for(let i=0; i<images.length; i++){
-                images[i].style.visibility = "visible";
-            }
-            second.style.display = "none";
-            third.style.display = "flex";
+            setTimeout(() => {
+                images.forEach(img => img.style.visibility = "visible");
+                second.style.display = "none";
+                third.style.display = "flex";
+                document.getElementById("TestImage").src = imgChosen.src;
+            }, 1000); 
         }, 10000);
     });
 
