@@ -50,7 +50,8 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px;
+  padding: 40px;
+  padding-bottom: 20px;
   text-align: center;
   background-color: black;
   border: 5px solid black;
@@ -62,6 +63,33 @@ body{
   align-items: center;
   justify-content: center;
   gap: 50px;
+}
+#counter{
+  border-radius: 10px;
+  height: 25px;
+  margin: 20px;
+}
+#ButtonSubmit{
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+#ButtonSubmit:hover{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+#TestImage{
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  border: 5px solid rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+#TestImage:hover{
+  transform: scale(1.1);
 }
 .wrapper {
   width: 200px;
