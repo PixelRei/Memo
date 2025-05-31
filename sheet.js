@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const first = document.querySelector(".start");
     const second = document.querySelector(".loading");
     const third = document.querySelector(".test");
+
     //immagini
     const img1 = document.getElementById("image1");
     const img2 = document.getElementById("image2");
