@@ -2,6 +2,9 @@
   font-family: 'Bubblegum';
   src: url(bubblegum/Bubblegum.ttf) format('truetype');
 }
+html{
+  width: 100%;
+}
 body{
   margin: 0;
   background-image: url(img/light-sfondo.jpg);
@@ -11,6 +14,7 @@ body{
   font-family: 'Bubblegum', sans-serif;
   font-size: 20px;
   overflow-y: hidden;
+  overflow: hidden;
 }
 .header{
   padding: 20px;
@@ -26,7 +30,6 @@ body{
   display:flex;
   justify-content: space-around;
   margin: 20px;
-  margin-top: 8px;
 }
 .images {
   display: grid;
@@ -44,6 +47,7 @@ body{
   object-fit: cover; /*riempie tutti gli spazi*/
   display: block;
 }
+
 .panel{
   text-align: center;
   margin: auto 0;
@@ -479,4 +483,41 @@ body{
 .btn-12:hover:after,
 .btn-12:hover:before {
   --progress: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    flex-direction: column; 
+    gap: 20px;               
+  }
+
+  .container {
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+  }
+
+  .images { 
+    width: 75%; 
+  }
+
+  .panel, .test {
+    width: 60%;
+    padding: 20px;
+  }
+
+  html {
+    width: 100%;
+  }
+
+  body {
+    overflow-y: auto; 
+  }
+}
+
+@media screen and (max-width: 600px){
+  body{
+    font-size: 15px;
+  }
+
 }
