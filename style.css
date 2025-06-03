@@ -30,6 +30,7 @@ body{
   display:flex;
   justify-content: space-around;
   margin: 20px;
+  margin-top: 40px;
 }
 .images {
   display: grid;
@@ -47,7 +48,6 @@ body{
   object-fit: cover; /*riempie tutti gli spazi*/
   display: block;
 }
-
 .panel{
   text-align: center;
   margin: auto 0;
@@ -485,7 +485,7 @@ body{
   --progress: 0;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1470px) {
   .header {
     flex-direction: column; 
     gap: 20px;               
@@ -498,12 +498,32 @@ body{
   }
 
   .images { 
-    width: 75%; 
+    width: 60%; 
   }
 
-  .panel, .test {
-    width: 60%;
+  .panel{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
     padding: 20px;
+  }
+  .loading{
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+  }
+  .test{
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+  }
+  #TestImage{
+    width: 80%;
   }
 
   html {
@@ -515,9 +535,9 @@ body{
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
   body{
-    font-size: 15px;
+    font-size: 14px;
   }
 
 }
