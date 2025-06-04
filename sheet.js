@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 
     document.getElementById("ButtonRestart").addEventListener("click", function(){
-        location.reload();
+        window.location.href = window.location.href; //refresh della pagina
     });
 
     function showImages(){

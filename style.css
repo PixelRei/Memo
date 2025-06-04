@@ -122,7 +122,9 @@ body{
 #TestImage:hover{
   transform: scale(1.1);
 }
-
+#ButtonRestart{
+  cursor: pointer;
+}
 
 .theme-switch {
   --toggle-size: 20px;
