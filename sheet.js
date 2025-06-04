@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     });
 
-    document.getElementById("ButtonRestart").addEventListener("click", function(){
+    document.getElementById("ButtonPositiveRestart").addEventListener("click", function(){
         window.location.href = window.location.href; //refresh della pagina
+    });
+    document.getElementById("ButtonNegativeRestart").addEventListener("click", function(){
+        window.location.href = window.location.href;
     });
 
     function showImages(){
