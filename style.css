@@ -45,7 +45,7 @@ body{
   padding: 17px;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
-  width: 550px;
+  width: 600px;
   margin: auto; 
 }
 .images img{
@@ -83,6 +83,19 @@ body{
   align-items: center;
   justify-content: center;
   gap: 50px;
+}
+.result-negative,
+.result-positive{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.result-negative,
+.result-positive{
+  display: none; /*sovrascrive per nascondere*/
 }
 #counter{
   border-radius: 10px;

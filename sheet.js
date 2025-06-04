@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const img9 = document.getElementById("image9");
     const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
     const imgChosen = images[Math.floor(Math.random() * images.length)];
+    let count = 0;
 
 
     start.addEventListener("click", function(){
@@ -39,9 +40,32 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }, 10000);
     });
 
+    document.getElementById("ButtonSubmit").addEventListener("click", function(){
+        third.style.display = "none";
+        const result = document.getElementById("counter");
+        if(parseInt(result.value) === count){
+            document.querySelector(".result-positive").style.display = "flex";
+            if(count === 1){
+                document.getElementById("resume-positive").innerHTML = "Hai visualizzato l'immagine " + count + " volta.";
+            }else{
+                document.getElementById("resume-positive").innerHTML = "Hai visualizzato l'immagine " + count + " volte.";
+            }
+        }else{
+            document.querySelector(".result-negative").style.display = "flex";
+            if(count === 1){
+                document.getElementById("resume-negative").innerHTML = "Hai visualizzato l'immagine " + count + " volta.";
+            }else{
+                document.getElementById("resume-negative").innerHTML = "Hai visualizzato l'immagine " + count + " volte.";
+            }
+        }
+    });
+
     function showImages(){
         let n = Math.floor(Math.random()*images.length);
         images[n].style.visibility = "visible";
+        if(images[n] === imgChosen){
+            count++;
+        }
         setTimeout(function(){
             images[n].style.visibility = "hidden";
         }, 1000);
