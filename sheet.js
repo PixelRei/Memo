@@ -60,6 +60,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     });
 
+    document.getElementById("ButtonRestart").addEventListener("click", function(){
+        location.reload();
+    });
+
     function showImages(){
         let n = Math.floor(Math.random()*images.length);
         images[n].style.visibility = "visible";

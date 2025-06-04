@@ -44,7 +44,7 @@ body{
   border-radius: 20px;
   padding: 17px;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 6px;
   width: 600px;
   margin: auto; 
 }
